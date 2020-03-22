@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Report New Covid -19 case in your area
+        </title> 
+        <link href='../public/output.css'>
+    </head>
+    <body>
+        <div class='bg-red-300'>
+            <form method='POST' action='/covid/new' class='bg-white w-1/4'>
+                <div>
+                    <label>Name of Suspect</label>
+                    <input type='text' placeholder="name of suspect" />
+                </div>
+                <div>
+                    <label>Address Line 1</label>
+                    <input type='text' placeholder="Address line one" />
+                </div>
+                <div>
+                    <label>Address Line 2</label>
+                    <input type='text' placeholder="Address line one" />
+                </div>
+                <button type='submit'>Report case!</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

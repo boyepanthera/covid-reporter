@@ -1,0 +1,23 @@
+{
+  "name": "covid-19-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard showing number of people affected by covid-19",
+  "main": "server.js",
+  "author": "Olanrewaju A. Olaboye",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "tailwindcss": "^1.2.0"
+  },
+  "scripts": {
+    "start:dev": "tailwindcss build ./public/server.css -o ./public/output.css & nodemon -r esm server.js"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4"
+  }
+}
