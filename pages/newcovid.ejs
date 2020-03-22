@@ -3,24 +3,27 @@
         <title>
             Report New Covid -19 case in your area
         </title> 
-        <link href='../public/output.css'>
+        <link href='/output.css' rel='stylesheet'>
     </head>
-    <body>
-        <div class='bg-red-300'>
-            <form method='POST' action='/covid/new' class='bg-white w-1/4'>
-                <div>
-                    <label>Name of Suspect</label>
-                    <input type='text' placeholder="name of suspect" />
+    <body class='bg-gray-300 h-full'>
+        <div class=''>
+            <form method='POST' action='/covid/new' class='shadow-lg bg-white sm:w-1/3 m-8 w-full p-8 rounded-lg mx-auto mt-20'>
+                <div class='text-center uppercase font-bold text-xl mb-4'>Report New Cases </div>
+                <div class='mb-4'>
+                    <label class='text-sm uppercase my-1 font-semibold'>Name of Suspect</label>
+                    <input name='Name of suspect' type='text' placeholder="e.g. Marvin Jude" class='block border-2 p-2 w-full rounded' />
                 </div>
-                <div>
-                    <label>Address Line 1</label>
-                    <input type='text' placeholder="Address line one" />
+                <div class='mb-4'>
+                    <label class='text-sm uppercase my-1 font-semibold'>Address Line 1</label>
+                    <input type='text' placeholder="Marvin Rd, Okokomaiko" class='block border-2 p-2 w-full rounded' />
                 </div>
-                <div>
-                    <label>Address Line 2</label>
-                    <input type='text' placeholder="Address line one" />
+                <div class='mb-4'>
+                    <label class='text-sm uppercase my-1 font-semibold'>Address Line 2</label>
+                    <input type='text' placeholder="Address line one" class='block border-2 p-2 w-full rounded' />
                 </div>
-                <button type='submit'>Report case!</button>
+                <div class='flex justify-center'>
+                    <button class='bg-red-400 hover:bg-red-600 w-full p-2 text-white font-bold rounded-full' type='submit'>Report case!</button>
+                </div>
             </form>
             
         </div>

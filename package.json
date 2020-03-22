@@ -1,7 +1,7 @@
 {
   "name": "covid-19-dashboard",
   "version": "1.0.0",
-  "description": "A dashboard showing number of people affected by covid-19",
+  "description": "A dashboard showing number of people affected by covid-19 and a form to report new cases in Nigeria",
   "main": "server.js",
   "author": "Olanrewaju A. Olaboye",
   "license": "MIT",
